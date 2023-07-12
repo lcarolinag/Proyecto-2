@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    flex-wrap: wrap;
+    background-image: url(../img/fondo6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+/*BARRA DE NAVEGACION*/
+
+.nav{
+    background-color:rgba(160, 69, 142, 0.3);
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
+    margin-bottom: 0px;
+   
+
+}
+
+/*CONTENEDOR DE LA IMAGEN Y EL TITULO*/
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+
+.nav img{
+    height: 90px;
+    width: 80px;
+    margin-right: 1rem;   
+}
+
+/*BARRA DE NAVEGACION, DIV Y ANCLA*/
+
+.nav div a{
+    text-decoration: none;
+}
+
+/*TITULO*/
+
+.nav div a h1{
+    font-size: 28px;
+    color: black;
+}
+
+/*BARRA DE NAV, ITEM DE LISTA*/
+
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav ul li{
+    height: 90px;
+    margin: 0;
+    padding: 5px;
+    font-size: 18px;
+
+}
+
+/*BARRA DE NAV, LISTA DESORDENADA, iTEM DE LISTAS Y ANCLAS*/
+
+.nav ul li a{
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav ul li a:hover{
+    color: rgb(84, 9, 234);
+
+}
+
+/*MAIN*/
+
+h2{
+    text-align: center;
+    font-size: xx-large;
+    font-size: 40px;
+    
+}
+
+.parrafo-1{
+    font-size: 24px;
+    padding: 30px;
+    margin: 30px;
+}
+
+/*FOOTER*/
+
+footer{
+    height: 90px;
+    text-align: center;
+    color: #0b0b0b;
+    margin: 20px;
+    padding: 20px;
+    
+}
+
+
+.iconos{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    gap: 20px;
+}
+
+.iconos a{
+    font-size: 60px;
+    color: #948d8d;
+}
+.footer{
+    height: 50px;
+    font-size: 20px;
+    color: azure;
+    background-color: #950478;
+    margin: auto;
+    padding-top: 20px;
+   
+}
+
+/* Media query para pantallas mas pequeñas*/
+
+@media (min-width: 601px) and (max-width: 1024px){
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav{
+        margin-top: 10px;
+    }
+
+    section {
+        padding:  20px;
+    }
+
+    footer {
+        color: rgb(79, 2, 224);
+    }
+
+}
+
+/* Media query para pantallas medianas y grandes*/
+
+@media (min-width: 370px) and (max-width: 600px){
+   header {
+       justify-content: space-between;
+
+    }
+    
+    section{
+        padding: 40px;
+        font-size: 24px;
+    }
+
+    footer {
+        padding: 20px;
+        color: red;
+        font-size: 24px;
+    }
+}
+
+/* Media query para pantallas pequeñas*/
+
+    @media (min-width: 50px) and (max-width: 369px) {
+        header {
+            flex-wrap: wrap;
+        }
+
+        nav ul {
+            flex-wrap: wrap;
+        }
+
+        Section {
+            padding: 50px;
+
+        }
+
+        footer{
+            padding: 20px;
+            color: rgb(23, 204, 32);
+            font-size: 20px;
+        
+        }
+    }
